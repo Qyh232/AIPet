@@ -1,72 +1,75 @@
-# AIBuddy 🐾
+# AIPet (桌面宠物) 🐾
+
+⚠️ 本项目中文文档。
+For English version, click here: [README.en.md](README.en.md)
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-AIBuddy is a desktop virtual pet. It can move autonomously, has a multi-layer memory system, an emotion system, and interacts with users through AI-powered conversations. It can play games, remember your preferences, and supports custom pets with multiple outfits.
+AIPet 是一款桌面虚拟宠物程序。宠物可自主行动、拥有多层记忆、情绪系统，并通过智能对话与用户互动。它不仅可以玩游戏、记住你的偏好，还能支持自定义宠物和多种外观。
 
 ---
 
-## 🌟 Features
+## 🌟 功能亮点
 
-### Autonomous Behaviors
+### 自主行为
 
-* The pet can patrol randomly, occasionally nap, and change expressions according to its state.
-* The AI can initiate conversations based on context to increase interactivity.
-* Behaviors and speech are triggered automatically (LLM-based) to keep the pet lively.
+* 宠物会自主巡逻、偶尔打瞌睡，并根据情况切换表情
+* AI 会根据上下文主动说话，增加互动感
+* 行为和发言由程序定时触发（LLM），确保宠物动态生动
 
-### User Interaction
+### 用户互动
 
-* Click the pet → Jump + Speak
-* Drag the pet → Follow the mouse
-* Chat → Streamed output + tool calls
-* Switch pets → Each pet has independent memory and state
+* 点击宠物 → 跳跃 + 对话
+* 拖拽宠物 → 跟随鼠标
+* 聊天对话 → 流式输出 + 工具调用
+* 切换宠物 → 每只宠物独立记忆与状态
 
-### Built-in Tools
+### 内置智能工具
 
-* Idiom Game
-* Calculator
-* Fortune
-* Guess Number
-* Remember user info (name, preferences, etc.)
+* 成语接龙游戏
+* 四则运算计算器
+* 运势占卜
+* 猜数字游戏
+* 记住用户信息（名字、偏好等）
 
-### Multi-layer Memory System
+### 多层记忆系统
 
-* **Working Memory**: Stores recent dialogues to maintain context (automatically records each conversation, max 50 entries, oldest entries are overwritten)
-* **Episodic Memory**: Stores historical dialogues, supports semantic search (automatically records each conversation)
+* **工作记忆**：存储最近对话，用于保持多轮对话的连贯性（每次对话自动写入，最多 50 条，超过最旧的自动覆盖）
+* **情景记忆**：保存历史对话片段，可通过语义检索快速查找相关内容（每次对话自动写入）
 
-### Customizable
+### 高度可定制
 
-* Add custom pets and outfits
-* Modify pet personality, name, and behaviors
-* Supports multiple LLM APIs
-
----
-
-## 🎬 Example Animations
-
-![Example Animation 1](examples/1.png)
-![Example Animation 2](examples/2.png)
-![Example Animation 3](examples/3.png)
-![Example Animation 4](examples/4.png)
+* 添加自定义宠物和外观
+* 修改宠物性格、名字、行为逻辑
+* 支持多种 LLM API
 
 ---
 
-## 💻 Installation (Windows)
+## 🎬 示例动画
 
-### 1. Prerequisites
+![示例动画 1](examples/1.png)
+![示例动画 2](examples/2.png)
+![示例动画 3](examples/3.png)
+![示例动画 4](examples/4.png)
 
-* Install Python 3.10 or higher and check "Add Python to PATH"
-* Install Git (optional, recommended for updates)
+---
 
-### 2. Clone the repository
+## 💻 安装指南（Windows）
+
+### 1. 环境准备
+
+* 安装 Python 3.10 及以上，并勾选 "Add Python to PATH"
+* 安装 Git（可选，便于后续更新）
+
+### 2. 克隆仓库
 
 ```bat
-git clone https://github.com/your-username/AIBuddy.git
-cd AIBuddy
+git clone https://github.com/你的用户名/AIPet.git
+cd AIPet
 ```
 
-### 3. Create virtual environment and install dependencies
+### 3. 创建虚拟环境并安装依赖
 
 ```bat
 python -m venv .venv
@@ -74,9 +77,9 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 4. Configure API key
+### 4. 配置 API 密钥
 
-Edit the `.env` file:
+编辑 `.env` 文件：
 
 ```ini
 LLM_BASE_URL = https://api.deepseek.com
@@ -84,13 +87,13 @@ LLM_API_KEY = sk-xxxxxxxxxxxxxxxxxxxxxxxx
 LLM_MODEL_ID = deepseek-chat
 ```
 
-### 5. Start the pet
+### 5. 启动宠物
 
 ```bat
 python -m ai_desktop_pet
 ```
 
-> If you don’t have an API key, you can run in template mode:
+> 无 API 密钥可用纯模板模式：
 
 ```bat
 python -m ai_desktop_pet --no-llm
@@ -98,79 +101,79 @@ python -m ai_desktop_pet --no-llm
 
 ---
 
-## 🐾 Usage
+## 🐾 使用方法
 
-| Action           | Effect                               |
-| ---------------- | ------------------------------------ |
-| Click the pet    | Jump + Speak                         |
-| Drag the pet     | Move pet anywhere on the screen      |
-| Type text        | Chat with the pet (requires LLM API) |
-| Right-click menu | Switch pets, play games, exit        |
+| 操作   | 效果                |
+| ---- | ----------------- |
+| 点击宠物 | 跳跃 + 对话           |
+| 拖拽宠物 | 移动宠物到屏幕任意位置       |
+| 输入文字 | 与宠物聊天（需要 LLM API） |
+| 右键菜单 | 切换宠物、玩游戏等         |
 
-### Right-click Menu
+### 右键菜单功能
 
-* 🐾 Switch pets (independent memory and state)
-* 🎮 Games
-* Exit
+* 🐾 切换宠物（独立记忆和状态）
+* 🎮 游戏
+* 退出程序
 
-### Pet Behavior Examples
+### 宠物行为示例
 
-* Patrols randomly about every 2 minutes
-* AI initiates speech every 5 minutes (LLM mode)
-* Remembers user name and preferences
+* 每约 2 分钟随机巡逻一次
+* 每 5 分钟 AI 主动发言（LLM 模式）
+* 宠物记住你名字和偏好
 
 ---
 
-## 🐶 Adding Custom Pets
+## 🐶 添加自定义宠物
 
-AIBuddy supports custom pets and multiple outfits. You can assign different skins and animations to a pet. Steps:
+AIPet 支持导入自定义宠物及多种外观（outfit），你可以给宠物不同皮肤和动作动画。以下为详细步骤：
 
-### 1. Create Pet Folder
+### 1. 创建宠物文件夹
 
-Create a uniquely named folder under `ai_desktop_pet/assets/sprites/`:
+在 `ai_desktop_pet/assets/sprites/` 下创建英文命名且唯一的文件夹，例如：
 
 ```
 sprites/
-└── mycat/                  ← Pet ID (English, unique)
-    ├── meta.json           ← Animal registration file
-    └── orange/             ← Outfit folder (English)
-        ├── meta.json       ← Outfit configuration file
-        ├── idle.png        ← Required
-        ├── walk.png        ← Optional
-        ├── jump.png        ← Optional
-        └── ...             ← Other actions
+└── mycat/                  ← 宠物 ID（英文，唯一）
+    ├── meta.json           ← 动物注册文件
+    └── orange/             ← 外观文件夹（outfit，英文）
+        ├── meta.json       ← 外观配置文件
+        ├── idle.png        ← 必须
+        ├── walk.png        ← 可选
+        ├── jump.png        ← 可选
+        └── ...             ← 其他动画
 ```
 
-> Each pet can have multiple outfits that can be switched in the right-click menu.
+> 每只宠物可以有多个外观（outfit），用户可在右键菜单中切换。
 
-### 2. Prepare Animations
+### 2. 准备动画
 
-* PNG format, transparent background (RGBA)
-* Each frame 64×64 px
-* `idle.png` required; others optional, missing actions default to `idle`
-* You can use AI or tools to generate fully prepared sprite sheets
-* Example:
+* PNG 格式，透明背景（RGBA）
+* 每帧尺寸 64×64 px
+* `idle.png` 必须，其余动作可选，缺失动作会自动用 `idle` 替代
+* 可使用 AI 或工具生成已准备好的动画精灵图
+* 示例：
 
-![Example Sprite](ai_desktop_pet/assets/sprites/tudog/yellow-and-white/celebrate.png)
+![示例精灵图](ai_desktop_pet/assets/sprites/tudog/yellow-and-white/celebrate.png)
 
-### 3. Configure JSON
+### 3. 配置 JSON
 
-**Animal registration file:** `mycat/meta.json`
+**动物注册文件：** `mycat/meta.json`
 
 ```json
 {
   "animal_id": "mycat",
-  "display_name": "My Cat",
+  "display_name": "我的猫咪",
   "outfits": ["orange"]
 }
 ```
 
-**Outfit configuration:** `mycat/orange/meta.json`
+**外观配置文件：** `mycat/orange/meta.json`
 
 ```json
 {
   "outfit_id": "orange",
-  "display_name": "Orange Cat",
+  "display_name": "橘猫",
   "frame_width": 64,
   "frame_height": 64,
   "scale": 2,
@@ -194,40 +197,40 @@ sprites/
 }
 ```
 
-> If an animation is missing, `idle` will be used as default.
+> 如果某个动画未准备，将使用 `idle` 作为默认。
 
-### 4. Register Pet Breed
+### 4. 注册宠物品种
 
-Add in `persona.py` `_BREED_MAP`:
+在 `persona.py` `_BREED_MAP` 添加：
 
 ```python
 _BREED_MAP = {
-    "mycat": "A proud orange cat"
+    "mycat": "一只傲娇的橘猫"
 }
 ```
 
-### 5. Apply Changes
+### 5. 生效方法
 
-1. Save files and restart AIBuddy
-2. Right-click → Switch Pet → My Cat → Choose outfit
-3. The new pet will appear on the desktop and support all prepared animations
+1. 保存文件后重启 AIPet
+2. 右键 → **切换宠物** → 我的猫咪 → 选择外观
+3. 新宠物即可在桌面出现，并支持所有准备好的动画
 
-### ✅ Checklist
+### ✅ 检查清单
 
-* [ ] PNG height = 64 px
-* [ ] Each frame width = 64 px
-* [ ] Frame content aligned consistently
-* [ ] `frame_width` and `frame_height` in `meta.json` = 64
-* [ ] `actions` frame count matches actual PNG frames
-* [ ] Pet breed registered in `_BREED_MAP`
-* [ ] Outfit list `outfits` matches folder names
+* [ ] PNG 高度 = 64 px
+* [ ] 每帧宽度 = 64 px
+* [ ] 各帧主体大小一致
+* [ ] `meta.json` 中 `frame_width` 和 `frame_height` = 64
+* [ ] `actions` 帧数与实际 PNG 帧数一致
+* [ ] `_BREED_MAP` 已注册宠物品种
+* [ ] 外观列表 `outfits` 与文件夹名一致
 
 ---
 
-## 🛠 Project Structure
+## 🛠 项目结构
 
 ```
-AIBuddy/
+AIPet/
 ├── ai_desktop_pet/
 │   ├── assets/
 │   ├── app.py
@@ -240,17 +243,17 @@ AIBuddy/
 ├── data/
 ├── .env
 ├── requirements.txt
-└── start_pet.bat
+└── 启动宠物.bat
 ```
 
 ---
 
-## 🤝 Contributing
+## 🤝 贡献
 
-Welcome to submit Pull Requests or Issues
+欢迎提交 Pull Request 或 Issues
 
 ---
 
-## 📜 License
+## 📜 许可
 
 MIT License © 2026
