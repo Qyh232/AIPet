@@ -1,0 +1,30 @@
+{
+  "outfit_id": "yellow-and-white",
+  "display_name": "Yellow and White",
+  "frame_width": 64,
+  "frame_height": 64,
+  "scale": 2,
+  "fps": 6,
+  "actions": {
+    "idle":      {"file": "idle.png",      "frames": 4},
+    "walk":      {"file": "walk.png",      "frames": 6},
+    "jump":      {"file": "jump.png",      "frames": 4},
+    "sleep":     {"file": "sleep.png",     "frames": 4},
+    "celebrate": {"file": "celebrate.png", "frames": 4},
+    "sad":       {"file": "sad.png",       "frames": 4},
+    "angry":     {"file": "angry.png",     "frames": 4},
+    "hungry":    {"file": "hungry.png",    "frames": 4},
+    "excited":   {"file": "excited.png",   "frames": 4}
+  },
+  "emotion_to_action": {
+    "idle":      "idle",
+    "happy":     "celebrate",
+    "sleepy":    "sleep",
+    "playing":   "walk",
+    "surprised": "jump",
+    "sad":       "sad",
+    "angry":     "angry",
+    "hungry":    "hungry",
+    "excited":   "excited"
+  }
+}

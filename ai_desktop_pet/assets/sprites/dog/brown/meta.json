@@ -1,0 +1,57 @@
+{
+  "outfit_id": "brown",
+  "display_name": "Brown Dog",
+  "frame_width": 32,
+  "frame_height": 32,
+  "scale": 4,
+  "fps": 6,
+  "actions": {
+    "idle": {
+      "file": "idle.png",
+      "frames": 4
+    },
+    "walk": {
+      "file": "walk.png",
+      "frames": 6
+    },
+    "jump": {
+      "file": "jump.png",
+      "frames": 4
+    },
+    "sleep": {
+      "file": "sleep.png",
+      "frames": 4
+    },
+    "celebrate": {
+      "file": "celebrate.png",
+      "frames": 4
+    },
+    "sad": {
+      "file": "sad.png",
+      "frames": 4
+    },
+    "angry": {
+      "file": "angry.png",
+      "frames": 4
+    },
+    "hungry": {
+      "file": "hungry.png",
+      "frames": 4
+    },
+    "excited": {
+      "file": "excited.png",
+      "frames": 4
+    }
+  },
+  "emotion_to_action": {
+    "idle": "idle",
+    "happy": "celebrate",
+    "sleepy": "sleep",
+    "playing": "walk",
+    "surprised": "jump",
+    "sad": "sad",
+    "angry": "angry",
+    "hungry": "hungry",
+    "excited": "excited"
+  }
+}
