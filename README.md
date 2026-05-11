@@ -39,7 +39,11 @@ AIBuddy 是一款桌面虚拟宠物程序。宠物可自主行动、拥有多层
 * 添加自定义宠物和外观
 * 修改宠物性格、名字、行为逻辑
 * 支持多种 LLM API
-
+  
+![示例动画 1](examples/1.png)
+![示例动画 2](examples/2.png)
+![示例动画 3](examples/3.png)
+![示例动画 4](examples/4.png)
 ---
 
 ## 💻 安装指南（Windows）
