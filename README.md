@@ -140,7 +140,7 @@ sprites/
 * 可使用 AI 或工具生成已拼接好的动画精灵图
 * 示例：
 
-![示例精灵图](assets/sprites/mycat/orange/idle.png)
+![示例精灵图](ai_desktop_pet/assets/sprites/tudog/yellow-and-white/celebrate.png)
 
 ### 3. 配置 JSON
 
