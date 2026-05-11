@@ -1,5 +1,8 @@
 # AIBuddy 🐾
 
+
+For English version, click here: [README.en.md](README.en.md)
+
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -14,6 +17,7 @@ AIBuddy 是一款桌面虚拟宠物程序。宠物可自主行动、拥有多层
 * 宠物会自主巡逻、偶尔打瞌睡，并根据情况切换表情
 * AI 会根据上下文主动说话，增加互动感
 * 行为和发言由程序定时触发（LLM），确保宠物动态生动
+
 ### 用户互动
 
 * 点击宠物 → 跳跃 + 对话
@@ -39,11 +43,16 @@ AIBuddy 是一款桌面虚拟宠物程序。宠物可自主行动、拥有多层
 * 添加自定义宠物和外观
 * 修改宠物性格、名字、行为逻辑
 * 支持多种 LLM API
-  
+
+---
+
+## 🎬 示例动画
+
 ![示例动画 1](examples/1.png)
 ![示例动画 2](examples/2.png)
 ![示例动画 3](examples/3.png)
 ![示例动画 4](examples/4.png)
+
 ---
 
 ## 💻 安装指南（Windows）
@@ -114,6 +123,7 @@ python -m ai_desktop_pet --no-llm
 * 宠物记住你名字和偏好
 
 ---
+
 ## 🐶 添加自定义宠物
 
 AIBuddy 支持导入自定义宠物及多种外观（outfit），你可以给宠物不同皮肤和动作动画。以下为详细步骤：
@@ -238,10 +248,9 @@ AIBuddy/
 
 ---
 
-
 ## 🤝 贡献
 
-欢迎：提交 Pull Request 或 Issues
+欢迎提交 Pull Request 或 Issues
 
 ---
 
