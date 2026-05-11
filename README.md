@@ -1,12 +1,12 @@
-# AIBuddy 🐾
+# AIPet (桌面宠物) 🐾
 
-
+⚠️ 本项目中文文档。
 For English version, click here: [README.en.md](README.en.md)
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-AIBuddy 是一款桌面虚拟宠物程序。宠物可自主行动、拥有多层记忆、情绪系统，并通过智能对话与用户互动。它不仅可以玩游戏、记住你的偏好，还能支持自定义宠物和多种外观。
+AIPet 是一款桌面虚拟宠物程序。宠物可自主行动、拥有多层记忆、情绪系统，并通过智能对话与用户互动。它不仅可以玩游戏、记住你的偏好，还能支持自定义宠物和多种外观。
 
 ---
 
@@ -65,8 +65,8 @@ AIBuddy 是一款桌面虚拟宠物程序。宠物可自主行动、拥有多层
 ### 2. 克隆仓库
 
 ```bat
-git clone https://github.com/你的用户名/AIBuddy.git
-cd AIBuddy
+git clone https://github.com/你的用户名/AIPet.git
+cd AIPet
 ```
 
 ### 3. 创建虚拟环境并安装依赖
@@ -126,7 +126,7 @@ python -m ai_desktop_pet --no-llm
 
 ## 🐶 添加自定义宠物
 
-AIBuddy 支持导入自定义宠物及多种外观（outfit），你可以给宠物不同皮肤和动作动画。以下为详细步骤：
+AIPet 支持导入自定义宠物及多种外观（outfit），你可以给宠物不同皮肤和动作动画。以下为详细步骤：
 
 ### 1. 创建宠物文件夹
 
@@ -151,7 +151,7 @@ sprites/
 * PNG 格式，透明背景（RGBA）
 * 每帧尺寸 64×64 px
 * `idle.png` 必须，其余动作可选，缺失动作会自动用 `idle` 替代
-* 可使用 AI 或工具生成已拼接好的动画精灵图
+* 可使用 AI 或工具生成已准备好的动画精灵图
 * 示例：
 
 ![示例精灵图](ai_desktop_pet/assets/sprites/tudog/yellow-and-white/celebrate.png)
@@ -211,7 +211,7 @@ _BREED_MAP = {
 
 ### 5. 生效方法
 
-1. 保存文件后重启 AIBuddy
+1. 保存文件后重启 AIPet
 2. 右键 → **切换宠物** → 我的猫咪 → 选择外观
 3. 新宠物即可在桌面出现，并支持所有准备好的动画
 
@@ -230,7 +230,7 @@ _BREED_MAP = {
 ## 🛠 项目结构
 
 ```
-AIBuddy/
+AIPet/
 ├── ai_desktop_pet/
 │   ├── assets/
 │   ├── app.py
